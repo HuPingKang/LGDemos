@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeSectionView" customModule="LGDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7z0-9o-fhS">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.79215686269999996" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WnK-pW-bWt"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="职位列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-Bz-WYx">
+                    <rect key="frame" x="15" y="0.0" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="DP4-Zc-Dr3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-yL-2v1">
+                    <rect key="frame" x="275" y="0.0" width="45" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="jd0-6T-wNF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="推荐">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eru-Ae-3bf">
+                    <rect key="frame" x="320" y="0.0" width="45" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="7C7-TS-4TH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="最新">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7z0-9o-fhS" secondAttribute="trailing" id="0Sk-cA-7uu"/>
+                <constraint firstItem="gc6-Bz-WYx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1LP-pv-8K2"/>
+                <constraint firstItem="7z0-9o-fhS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5Lz-Qt-0ET"/>
+                <constraint firstItem="7z0-9o-fhS" firstAttribute="top" secondItem="7NW-yL-2v1" secondAttribute="bottom" id="Ivu-uO-lMj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Eru-Ae-3bf" secondAttribute="trailing" constant="10" id="Rd1-D3-f55"/>
+                <constraint firstItem="Eru-Ae-3bf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="YRL-bR-AED"/>
+                <constraint firstItem="Eru-Ae-3bf" firstAttribute="leading" secondItem="7NW-yL-2v1" secondAttribute="trailing" id="cSc-8i-P5x"/>
+                <constraint firstItem="gc6-Bz-WYx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="eoV-Jj-29V"/>
+                <constraint firstItem="7z0-9o-fhS" firstAttribute="top" secondItem="Eru-Ae-3bf" secondAttribute="bottom" id="nOx-aD-p0d"/>
+                <constraint firstItem="7NW-yL-2v1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tBH-f7-ebO"/>
+                <constraint firstItem="gc6-Bz-WYx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="vse-0D-3bk"/>
+                <constraint firstAttribute="bottom" secondItem="7z0-9o-fhS" secondAttribute="bottom" id="ySt-Rg-Rkt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>

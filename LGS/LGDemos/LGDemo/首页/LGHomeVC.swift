@@ -8,7 +8,8 @@ import UIKit
 
 let KW:CGFloat = UIScreen.main.bounds.size.width
 let KH:CGFloat = UIScreen.main.bounds.size.height
-let kNaviHeight:CGFloat = (KW * KH == 812.0 * 375.0) ?84.0:64.0
+let kNaviHeight:CGFloat = (KW * KH == 812.0 * 375.0) ?88.0:64.0
+let kTabHeight:CGFloat = (KW * KH == 812.0 * 375.0) ?83.0:49.0
 
 class LGHomeVC: LGBaseVC {
 
@@ -48,9 +49,9 @@ class LGHomeVC: LGBaseVC {
         
     }
     
-//    override var preferredStatusBarStyle: UIStatusBarStyle{
-//        return .lightContent
-//    }
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,6 @@ class LGHomeVC: LGBaseVC {
             self.endRefresh()
         })
         
-   
         self.tableView.mj_header.beginRefreshing()
         self.endRefresh()
         
@@ -113,10 +113,10 @@ extension LGHomeVC:UITableViewDelegate,UITableViewDataSource{
         
         if scrollView.contentOffset.y<0 {
             self.naviBgView.isHidden = true
-            UIApplication.shared.statusBarStyle = .lightContent
+            
         }else{
             self.naviBgView.isHidden = false
-            UIApplication.shared.statusBarStyle = .default
+           
         }
         var alpha = scrollView.contentOffset.y/220.0
         if alpha > 1 {

@@ -6,7 +6,8 @@ target 'LGDemo' do
   use_frameworks!
 
    pod 'SDCycleScrollView'
-   pod 'MJRefresh'
+   pod 'MJRefresh' 
+   pod 'SnapKit'
 
   # Pods for LGDemo
 

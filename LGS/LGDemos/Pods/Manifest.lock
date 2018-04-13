@@ -5,22 +5,26 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - MJRefresh
   - SDCycleScrollView
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - MJRefresh
     - SDCycleScrollView
     - SDWebImage
+    - SnapKit
 
 SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 0b6c0c39efbc4a7223fc1185c99ed7b35b7398ae
+PODFILE CHECKSUM: 0a8bc27f72784b02e804f4b4c0a95dc7bfe76187
 
 COCOAPODS: 1.5.0

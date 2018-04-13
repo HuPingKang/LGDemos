@@ -5,7 +5,7 @@
 //  Created by qwer on 2018/4/10.
 //  Copyright © 2018年 qwer. All rights reserved.
 //
-
+import SnapKit
 import UIKit
 
 class LGWordVC: LGBaseVC {
@@ -25,6 +25,42 @@ class LGWordVC: LGBaseVC {
         return xx
     }()
     
+    //提问：
+    private lazy var questionControl:UIControl = {
+       
+        let xx = UIControl.init(frame: CGRect.init(x: self.view.frame.maxX-75, y: self.view.frame.maxY-75-kNaviHeight-kTabHeight, width: 60, height: 60))
+        xx.layer.cornerRadius = 30
+        xx.layer.masksToBounds = true
+        xx.backgroundColor = UIColor.init(red: 73/255.0, green: 164/255.0, blue: 218/255.0, alpha: 1)
+        
+        let imageV = UIImageView()
+        imageV.image = UIImage.init(named: "comment")
+        xx.addSubview(imageV)
+        imageV.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(10)
+            make.centerX.equalTo(xx)
+        }
+       
+        let label = UILabel.init()
+        label.text = "提问"
+        label.textColor = UIColor.white
+        label.font = UIFont.init(name: "PingFang-SC-Regular", size: 11)
+        label.textAlignment = .center
+        xx.addSubview(label)
+        label.snp.makeConstraints({ (maker) in
+            maker.bottom.equalTo(-10)
+            maker.centerX.equalTo(xx)
+        })
+        
+        xx.addTarget(self, action: #selector(self.questions), for: .touchUpInside)
+        
+        return xx
+    }()
+    
+    @objc private func questions(){
+        print("send your questions...")
+    }
+    
     private lazy var cateView:WordCategoryView = {
        
         let xx = WordCategoryView.getView()
@@ -36,7 +72,6 @@ class LGWordVC: LGBaseVC {
             let vc = LGWordPageVC()
             vc.pageIndex = index
             wSelf?.pageController?.setViewControllers([vc], direction: index > xx.cateIndex ?.forward:.reverse, animated: true, completion: { (fx) in
-                
             })
             
             xx.cateIndex = index
@@ -95,7 +130,8 @@ class LGWordVC: LGBaseVC {
         
         self.view.addSubview(cateView)
         self.navigationItem.titleView = titleView
-        
+        self.view.addSubview(self.questionControl)
+        self.view.bringSubview(toFront: self.questionControl)
     }
     
     override func viewWillAppear(_ animated: Bool) {

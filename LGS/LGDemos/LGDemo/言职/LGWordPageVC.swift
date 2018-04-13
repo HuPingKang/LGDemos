@@ -12,12 +12,12 @@ class LGWordPageVC: UITableViewController {
     
     private lazy var headerView: UIView = {
         
-        let xx = UIView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 170))
+        let xx = UIView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 190))
         xx.backgroundColor = UIColor.init(red: 236/255.0, green: 236/255.0, blue: 236/255.0, alpha: 1)
         
-        let sd = SDCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 160), imageNamesGroup: ["02.jpg","03.jpg","04.jpg","05.jpg"])
+        let sd = SDCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 180), imageNamesGroup: ["02.jpg","03.jpg","04.jpg","05.jpg"])
         sd?.titlesGroup = ["言职课堂 | 如何写一份让HR无法拒绝的简历","你知道自己的运营能力值多少钱吗？","在职场中，如何提升自己的价值？","如何判断一个公司是否靠谱？"]
-        sd?.autoScrollTimeInterval = 2
+        sd?.autoScrollTimeInterval = 5
         sd?.titleLabelBackgroundColor = (UIColor.black).withAlphaComponent(0.4)
         sd?.showPageControl = false
         sd?.scrollDirection = .horizontal
@@ -36,6 +36,7 @@ class LGWordPageVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorStyle = .none
         
         if pageIndex == 0 {
@@ -46,6 +47,19 @@ class LGWordPageVC: UITableViewController {
         }
         self.tableView.register(UINib.init(nibName: "LGWordPageCell", bundle: nil), forCellReuseIdentifier: "LGWordPageCell")
         
+        self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+            self.endRefresh()
+        })
+        
+        self.tableView.mj_header.beginRefreshing()
+        self.endRefresh()
+        
+    }
+    
+    private func endRefresh(){
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1.5) {
+            self.tableView.mj_header.endRefreshing()
+        }
     }
 
     override func didReceiveMemoryWarning() {

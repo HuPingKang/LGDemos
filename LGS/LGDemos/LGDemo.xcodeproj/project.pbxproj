@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A21CB0D20806F5F0094A5E6 /* 1872 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF620806F5E0094A5E6 /* 1872 */; };
+		4A21CB0E20806F5F0094A5E6 /* 1898 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF720806F5E0094A5E6 /* 1898 */; };
+		4A21CB0F20806F5F0094A5E6 /* app_JSON in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF820806F5E0094A5E6 /* app_JSON */; };
+		4A21CB1020806F5F0094A5E6 /* json_Art in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF920806F5E0094A5E6 /* json_Art */; };
+		4A21CB1120806F5F0094A5E6 /* json_Design in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFA20806F5E0094A5E6 /* json_Design */; };
+		4A21CB1220806F5F0094A5E6 /* json_Dormitory in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFB20806F5E0094A5E6 /* json_Dormitory */; };
+		4A21CB1320806F5F0094A5E6 /* json_Eater in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFC20806F5E0094A5E6 /* json_Eater */; };
+		4A21CB1420806F5F0094A5E6 /* json_Gift in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFD20806F5E0094A5E6 /* json_Gift */; };
+		4A21CB1520806F5F0094A5E6 /* json_Guide in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFE20806F5E0094A5E6 /* json_Guide */; };
+		4A21CB1620806F5F0094A5E6 /* json_Holiday in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAFF20806F5E0094A5E6 /* json_Holiday */; };
+		4A21CB1720806F5F0094A5E6 /* json_Kitchen in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0020806F5E0094A5E6 /* json_Kitchen */; };
+		4A21CB1820806F5F0094A5E6 /* json_LoveBeauty in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0120806F5E0094A5E6 /* json_LoveBeauty */; };
+		4A21CB1920806F5F0094A5E6 /* json_Party in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0220806F5E0094A5E6 /* json_Party */; };
+		4A21CB1A20806F5F0094A5E6 /* json_Student in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0320806F5E0094A5E6 /* json_Student */; };
+		4A21CB1B20806F5F0094A5E6 /* json_WageEarners in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0420806F5E0094A5E6 /* json_WageEarners */; };
+		4A21CB1C20806F5F0094A5E6 /* stylenand 打底霜 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0520806F5E0094A5E6 /* stylenand 打底霜 */; };
+		4A21CB1D20806F5F0094A5E6 /* 广场 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0620806F5E0094A5E6 /* 广场 */; };
+		4A21CB1E20806F5F0094A5E6 /* 底妆 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0720806F5E0094A5E6 /* 底妆 */; };
+		4A21CB1F20806F5F0094A5E6 /* 搜索列表 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0820806F5E0094A5E6 /* 搜索列表 */; };
+		4A21CB2020806F5F0094A5E6 /* 搜索清单 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0920806F5E0094A5E6 /* 搜索清单 */; };
+		4A21CB2120806F5F0094A5E6 /* 深夜图书馆 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0A20806F5E0094A5E6 /* 深夜图书馆 */; };
+		4A21CB2220806F5F0094A5E6 /* 用户推荐 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0B20806F5E0094A5E6 /* 用户推荐 */; };
+		4A21CB2320806F5F0094A5E6 /* 种草小分队 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CB0C20806F5E0094A5E6 /* 种草小分队 */; };
+		4A21CB2B20808D5A0094A5E6 /* LGMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A21CB2A20808D5A0094A5E6 /* LGMessageModel.swift */; };
 		4A2771E7207EF48200A25309 /* WordCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2771E6207EF48200A25309 /* WordCategoryView.xib */; };
 		4A2771E9207F1BF700A25309 /* LGWordPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2771E8207F1BF700A25309 /* LGWordPageVC.swift */; };
 		4A2771EC207F417B00A25309 /* LGWordPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2771EA207F417B00A25309 /* LGWordPageCell.swift */; };
@@ -82,6 +106,30 @@
 		16DBDDCFED588D033769DDF3 /* Pods-LGDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGDemoUITests/Pods-LGDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		211F7E1CB14DEFD0037AC322 /* Pods_LGDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BC96A6F1789EAF511CDFF8 /* Pods-LGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGDemo/Pods-LGDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4A21CAF620806F5E0094A5E6 /* 1872 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1872; sourceTree = "<group>"; };
+		4A21CAF720806F5E0094A5E6 /* 1898 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1898; sourceTree = "<group>"; };
+		4A21CAF820806F5E0094A5E6 /* app_JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = app_JSON; sourceTree = "<group>"; };
+		4A21CAF920806F5E0094A5E6 /* json_Art */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Art; sourceTree = "<group>"; };
+		4A21CAFA20806F5E0094A5E6 /* json_Design */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Design; sourceTree = "<group>"; };
+		4A21CAFB20806F5E0094A5E6 /* json_Dormitory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Dormitory; sourceTree = "<group>"; };
+		4A21CAFC20806F5E0094A5E6 /* json_Eater */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Eater; sourceTree = "<group>"; };
+		4A21CAFD20806F5E0094A5E6 /* json_Gift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Gift; sourceTree = "<group>"; };
+		4A21CAFE20806F5E0094A5E6 /* json_Guide */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Guide; sourceTree = "<group>"; };
+		4A21CAFF20806F5E0094A5E6 /* json_Holiday */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Holiday; sourceTree = "<group>"; };
+		4A21CB0020806F5E0094A5E6 /* json_Kitchen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Kitchen; sourceTree = "<group>"; };
+		4A21CB0120806F5E0094A5E6 /* json_LoveBeauty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_LoveBeauty; sourceTree = "<group>"; };
+		4A21CB0220806F5E0094A5E6 /* json_Party */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Party; sourceTree = "<group>"; };
+		4A21CB0320806F5E0094A5E6 /* json_Student */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_Student; sourceTree = "<group>"; };
+		4A21CB0420806F5E0094A5E6 /* json_WageEarners */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_WageEarners; sourceTree = "<group>"; };
+		4A21CB0520806F5E0094A5E6 /* stylenand 打底霜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stylenand 打底霜"; sourceTree = "<group>"; };
+		4A21CB0620806F5E0094A5E6 /* 广场 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "广场"; sourceTree = "<group>"; };
+		4A21CB0720806F5E0094A5E6 /* 底妆 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "底妆"; sourceTree = "<group>"; };
+		4A21CB0820806F5E0094A5E6 /* 搜索列表 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "搜索列表"; sourceTree = "<group>"; };
+		4A21CB0920806F5E0094A5E6 /* 搜索清单 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "搜索清单"; sourceTree = "<group>"; };
+		4A21CB0A20806F5E0094A5E6 /* 深夜图书馆 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "深夜图书馆"; sourceTree = "<group>"; };
+		4A21CB0B20806F5E0094A5E6 /* 用户推荐 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "用户推荐"; sourceTree = "<group>"; };
+		4A21CB0C20806F5E0094A5E6 /* 种草小分队 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "种草小分队"; sourceTree = "<group>"; };
+		4A21CB2A20808D5A0094A5E6 /* LGMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGMessageModel.swift; sourceTree = "<group>"; };
 		4A2771E6207EF48200A25309 /* WordCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCategoryView.xib; sourceTree = "<group>"; };
 		4A2771E8207F1BF700A25309 /* LGWordPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGWordPageVC.swift; sourceTree = "<group>"; };
 		4A2771EA207F417B00A25309 /* LGWordPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGWordPageCell.swift; sourceTree = "<group>"; };
@@ -203,9 +251,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A21CAF520806F5E0094A5E6 /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+				4A21CAF620806F5E0094A5E6 /* 1872 */,
+				4A21CAF720806F5E0094A5E6 /* 1898 */,
+				4A21CAF820806F5E0094A5E6 /* app_JSON */,
+				4A21CAF920806F5E0094A5E6 /* json_Art */,
+				4A21CAFA20806F5E0094A5E6 /* json_Design */,
+				4A21CAFB20806F5E0094A5E6 /* json_Dormitory */,
+				4A21CAFC20806F5E0094A5E6 /* json_Eater */,
+				4A21CAFD20806F5E0094A5E6 /* json_Gift */,
+				4A21CAFE20806F5E0094A5E6 /* json_Guide */,
+				4A21CAFF20806F5E0094A5E6 /* json_Holiday */,
+				4A21CB0020806F5E0094A5E6 /* json_Kitchen */,
+				4A21CB0120806F5E0094A5E6 /* json_LoveBeauty */,
+				4A21CB0220806F5E0094A5E6 /* json_Party */,
+				4A21CB0320806F5E0094A5E6 /* json_Student */,
+				4A21CB0420806F5E0094A5E6 /* json_WageEarners */,
+				4A21CB0520806F5E0094A5E6 /* stylenand 打底霜 */,
+				4A21CB0620806F5E0094A5E6 /* 广场 */,
+				4A21CB0720806F5E0094A5E6 /* 底妆 */,
+				4A21CB0820806F5E0094A5E6 /* 搜索列表 */,
+				4A21CB0920806F5E0094A5E6 /* 搜索清单 */,
+				4A21CB0A20806F5E0094A5E6 /* 深夜图书馆 */,
+				4A21CB0B20806F5E0094A5E6 /* 用户推荐 */,
+				4A21CB0C20806F5E0094A5E6 /* 种草小分队 */,
+			);
+			path = JSONData;
+			sourceTree = "<group>";
+		};
 		4A30B91D207DCD1F0095E666 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				4A21CAF520806F5E0094A5E6 /* JSONData */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -300,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				4A57D034207CA4BF00D1B864 /* LGMessageVC.swift */,
+				4A21CB2A20808D5A0094A5E6 /* LGMessageModel.swift */,
 			);
 			path = "消息";
 			sourceTree = "<group>";
@@ -466,19 +546,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A21CB2020806F5F0094A5E6 /* 搜索清单 in Resources */,
 				4A2771ED207F417B00A25309 /* LGWordPageCell.xib in Resources */,
+				4A21CB0F20806F5F0094A5E6 /* app_JSON in Resources */,
+				4A21CB2120806F5F0094A5E6 /* 深夜图书馆 in Resources */,
+				4A21CB1420806F5F0094A5E6 /* json_Gift in Resources */,
+				4A21CB1320806F5F0094A5E6 /* json_Eater in Resources */,
+				4A21CB1720806F5F0094A5E6 /* json_Kitchen in Resources */,
+				4A21CB2220806F5F0094A5E6 /* 用户推荐 in Resources */,
 				4A2771E7207EF48200A25309 /* WordCategoryView.xib in Resources */,
 				4AB4F4BD207CBB3D00826B74 /* 05.jpg in Resources */,
 				4AB4F4BB207CBB3D00826B74 /* 03.jpg in Resources */,
+				4A21CB1120806F5F0094A5E6 /* json_Design in Resources */,
+				4A21CB1C20806F5F0094A5E6 /* stylenand 打底霜 in Resources */,
 				4A57D03F207CB06A00D1B864 /* HomeHeaderView.xib in Resources */,
+				4A21CB2320806F5F0094A5E6 /* 种草小分队 in Resources */,
+				4A21CB1920806F5F0094A5E6 /* json_Party in Resources */,
 				4A2771F1207F453700A25309 /* LGWordPagePicCell.xib in Resources */,
 				4A57D009207C9C2C00D1B864 /* LaunchScreen.storyboard in Resources */,
+				4A21CB0D20806F5F0094A5E6 /* 1872 in Resources */,
 				4AB4F4B9207CBB3D00826B74 /* 01.jpg in Resources */,
 				4A30B91C207DA6BD0095E666 /* HomeNaviView.xib in Resources */,
+				4A21CB1E20806F5F0094A5E6 /* 底妆 in Resources */,
 				4AB4F4BA207CBB3D00826B74 /* 02.jpg in Resources */,
+				4A21CB1620806F5F0094A5E6 /* json_Holiday in Resources */,
 				4AB4F4BC207CBB3D00826B74 /* 04.jpg in Resources */,
+				4A21CB1820806F5F0094A5E6 /* json_LoveBeauty in Resources */,
+				4A21CB1520806F5F0094A5E6 /* json_Guide in Resources */,
+				4A21CB1D20806F5F0094A5E6 /* 广场 in Resources */,
 				4A57D043207CB20F00D1B864 /* HomeSectionView.xib in Resources */,
+				4A21CB1F20806F5F0094A5E6 /* 搜索列表 in Resources */,
+				4A21CB1020806F5F0094A5E6 /* json_Art in Resources */,
+				4A21CB1220806F5F0094A5E6 /* json_Dormitory in Resources */,
+				4A21CB1A20806F5F0094A5E6 /* json_Student in Resources */,
+				4A21CB1B20806F5F0094A5E6 /* json_WageEarners in Resources */,
 				4A57D006207C9C2C00D1B864 /* Assets.xcassets in Resources */,
+				4A21CB0E20806F5F0094A5E6 /* 1898 in Resources */,
 				4A57D004207C9C1F00D1B864 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,12 +667,14 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,6 +688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A21CB2B20808D5A0094A5E6 /* LGMessageModel.swift in Sources */,
 				4A57D02D207C9CE800D1B864 /* LGMainTabVC.swift in Sources */,
 				4A30BAC4207E0FBC0095E666 /* WordCategoryView.swift in Sources */,
 				4A57D001207C9C1F00D1B864 /* LGBaseVC.swift in Sources */,

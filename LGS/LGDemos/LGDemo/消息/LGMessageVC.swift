@@ -33,7 +33,6 @@ class LGMessageVC: LGBaseVC {
 //                        self.navigationController?.pushViewController(friendsVC, animated: true)
 //                        self.navigationController?.isNavigationBarHidden = false
 //
-//
 //                    }) else{
 //                        return;
 //                    }

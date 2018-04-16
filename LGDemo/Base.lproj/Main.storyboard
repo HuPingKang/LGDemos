@@ -125,22 +125,6 @@
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="107.49625187406298"/>
         </scene>
-        <!--MessageVC-->
-        <scene sceneID="oJ8-Tb-vAO">
-            <objects>
-                <viewController storyboardIdentifier="LGMessageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iHx-UN-zQK" customClass="LGMessageVC" customModule="LGDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BdW-BL-cJQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="ZDK-Co-vAC"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ugz-KA-QNN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q59-77-7yM" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2036" y="107"/>
-        </scene>
         <!--WordVC-->
         <scene sceneID="vc3-1L-Gf8">
             <objects>
@@ -560,24 +544,146 @@
             </objects>
             <point key="canvasLocation" x="1097" y="841"/>
         </scene>
-        <!--消息-->
+        <!--看看-->
         <scene sceneID="4JB-ay-8gj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZC-dJ-LGP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="消息" image="message_normal" badgeValue="3" selectedImage="message_selected" id="lel-MQ-f6n"/>
+                    <tabBarItem key="tabBarItem" title="看看" image="message_normal" selectedImage="message_selected" id="lel-MQ-f6n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gIY-g9-U18">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="gIY-g9-U18">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iHx-UN-zQK" kind="relationship" relationship="rootViewController" id="uZK-a1-5XE"/>
+                        <segue destination="xGd-QU-HDg" kind="relationship" relationship="rootViewController" id="2xi-gQ-vFJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qb5-9O-LoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097" y="107"/>
+        </scene>
+        <!--MessageVC-->
+        <scene sceneID="j2x-UR-6fV">
+            <objects>
+                <tableViewController storyboardIdentifier="LGMessageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xGd-QU-HDg" customClass="LGMessageVC" customModule="LGDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KuO-Ax-Yhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LGVideoCell" rowHeight="270" id="c8V-69-PA1" customClass="LGVideoCell" customModule="LGDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c8V-69-PA1" id="A2a-qq-Zbf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jF7-3Q-CYP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXw-zH-G6Y" customClass="PlayBottomToolBar">
+                                            <rect key="frame" x="0.0" y="170" width="375" height="50"/>
+                                            <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="gAU-e1-z3v"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17P-iR-Mgk">
+                                            <rect key="frame" x="0.0" y="220" width="375" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    本味    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87S-YP-5np">
+                                                    <rect key="frame" x="25" y="13.666666666666657" width="56" height="24"/>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="U9o-C5-MqC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="12"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pft-sY-rGM">
+                                                    <rect key="frame" x="10" y="13.333333333333343" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="1qa-yA-pKq"/>
+                                                        <constraint firstAttribute="width" constant="24" id="mN8-2H-GQh"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-oA-bYv">
+                                                    <rect key="frame" x="325" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="1eO-9I-jj8"/>
+                                                        <constraint firstAttribute="width" constant="40" id="QIu-Oo-tiC"/>
+                                                    </constraints>
+                                                    <state key="normal" image="share">
+                                                        <color key="titleColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-t0-ssd">
+                                                    <rect key="frame" x="265" y="3" width="60" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="DG7-qd-N0j"/>
+                                                        <constraint firstAttribute="width" constant="60" id="fKZ-AA-qoA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                                                    <state key="normal" title=" 订阅" image="observer">
+                                                        <color key="titleColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Pft-sY-rGM" firstAttribute="leading" secondItem="17P-iR-Mgk" secondAttribute="leading" constant="10" id="DXs-4f-VTe"/>
+                                                <constraint firstAttribute="trailing" secondItem="zT5-oA-bYv" secondAttribute="trailing" constant="10" id="Lms-8z-m3n"/>
+                                                <constraint firstItem="87S-YP-5np" firstAttribute="leading" secondItem="17P-iR-Mgk" secondAttribute="leading" constant="25" id="QUD-cb-bU8"/>
+                                                <constraint firstItem="htZ-t0-ssd" firstAttribute="centerY" secondItem="17P-iR-Mgk" secondAttribute="centerY" id="Y1T-J0-AG1"/>
+                                                <constraint firstItem="zT5-oA-bYv" firstAttribute="leading" secondItem="htZ-t0-ssd" secondAttribute="trailing" id="adf-sO-ADd"/>
+                                                <constraint firstItem="87S-YP-5np" firstAttribute="centerY" secondItem="17P-iR-Mgk" secondAttribute="centerY" id="jhz-RC-YvH"/>
+                                                <constraint firstItem="Pft-sY-rGM" firstAttribute="centerY" secondItem="17P-iR-Mgk" secondAttribute="centerY" id="leG-Vd-UOG"/>
+                                                <constraint firstItem="zT5-oA-bYv" firstAttribute="centerY" secondItem="17P-iR-Mgk" secondAttribute="centerY" id="lzr-4z-9lk"/>
+                                                <constraint firstAttribute="height" constant="50" id="yvI-rG-Vlh"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jF7-3Q-CYP" firstAttribute="top" secondItem="A2a-qq-Zbf" secondAttribute="top" id="1JI-GG-ZDy"/>
+                                        <constraint firstAttribute="bottom" secondItem="jF7-3Q-CYP" secondAttribute="bottom" constant="50" id="8Yx-Y1-azF"/>
+                                        <constraint firstAttribute="trailing" secondItem="17P-iR-Mgk" secondAttribute="trailing" id="C0Z-CX-MaN"/>
+                                        <constraint firstItem="17P-iR-Mgk" firstAttribute="leading" secondItem="A2a-qq-Zbf" secondAttribute="leading" id="T82-CE-UVY"/>
+                                        <constraint firstAttribute="trailing" secondItem="jF7-3Q-CYP" secondAttribute="trailing" id="TS9-Hd-FE0"/>
+                                        <constraint firstAttribute="trailing" secondItem="yXw-zH-G6Y" secondAttribute="trailing" id="XfL-YU-tDe"/>
+                                        <constraint firstItem="yXw-zH-G6Y" firstAttribute="leading" secondItem="A2a-qq-Zbf" secondAttribute="leading" id="Xjn-GI-ahh"/>
+                                        <constraint firstItem="jF7-3Q-CYP" firstAttribute="leading" secondItem="A2a-qq-Zbf" secondAttribute="leading" id="g3H-w1-Xr7"/>
+                                        <constraint firstAttribute="bottom" secondItem="yXw-zH-G6Y" secondAttribute="bottom" constant="50" id="j6J-k8-efA"/>
+                                        <constraint firstAttribute="bottom" secondItem="17P-iR-Mgk" secondAttribute="bottom" id="wFT-I1-2lL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="jF7-3Q-CYP" id="VOQ-yq-kck"/>
+                                    <outlet property="playView" destination="yXw-zH-G6Y" id="MyU-Nq-ZuF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xGd-QU-HDg" id="scB-os-rGm"/>
+                            <outlet property="delegate" destination="xGd-QU-HDg" id="C4J-dx-2tc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qjq-B1-ZVf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB0-sA-0gR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036" y="105.66502463054188"/>
         </scene>
     </scenes>
     <resources>
@@ -594,7 +700,9 @@
         <image name="message_normal" width="21" height="21"/>
         <image name="message_selected" width="21" height="21"/>
         <image name="nextArrow" width="21" height="21"/>
+        <image name="observer" width="16" height="16"/>
         <image name="paper" width="16" height="16"/>
+        <image name="share" width="16" height="16"/>
         <image name="user_head" width="35" height="35"/>
         <image name="weights" width="16" height="16"/>
         <image name="word_normal" width="21" height="21"/>

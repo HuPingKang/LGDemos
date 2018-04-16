@@ -74,7 +74,7 @@ class LGHomeVC: LGBaseVC {
     }
 
     private func endRefresh(){
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5) {
             self.tableView.mj_header.endRefreshing()
         }
     }

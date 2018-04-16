@@ -8,7 +8,7 @@ target 'LGDemo' do
    pod 'SDCycleScrollView'
    pod 'MJRefresh' 
    pod 'SnapKit'
-
+   pod 'Masonry'
   # Pods for LGDemo
 
   target 'LGDemoTests' do

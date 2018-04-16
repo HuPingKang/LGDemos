@@ -12,6 +12,7 @@
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import <MJRefresh/MJRefresh.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-//#import "SPKitExample.h"
+#import "PlayBottomToolBar.h"
+#import "CLPlayerView.h"
 
 #endif /* LGHeader_h */

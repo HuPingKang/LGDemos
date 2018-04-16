@@ -40,13 +40,18 @@ class LGWordPageVC: UITableViewController {
         
         self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorStyle = .none
+        if #available(iOS 11.0, *) {
+            self.tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false;
+        };
         
         if pageIndex == 0 {
             self.tableView.tableHeaderView = self.headerView
         }
         if pageIndex == 3 {
             self.tableView.estimatedRowHeight = 130
-           self.tableView.register(UINib.init(nibName: "LGWordPagePicCell", bundle: nil), forCellReuseIdentifier: "LGWordPagePicCell")
+            self.tableView.register(UINib.init(nibName: "LGWordPagePicCell", bundle: nil), forCellReuseIdentifier: "LGWordPagePicCell")
             guard let infoModels = LGWordPagePicModel.getData() else{
                 return;
             }
@@ -63,11 +68,10 @@ class LGWordPageVC: UITableViewController {
         self.tableView.mj_header.beginRefreshing()
         self.endRefresh()
         
-        
     }
     
     private func endRefresh(){
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1.5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5) {
             self.tableView.mj_header.endRefreshing()
         }
     }

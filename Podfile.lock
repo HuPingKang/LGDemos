@@ -1,4 +1,5 @@
 PODS:
+  - Masonry (1.1.0)
   - MJRefresh (3.1.15.3)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
@@ -8,23 +9,26 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - Masonry
   - MJRefresh
   - SDCycleScrollView
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Masonry
     - MJRefresh
     - SDCycleScrollView
     - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 0a8bc27f72784b02e804f4b4c0a95dc7bfe76187
+PODFILE CHECKSUM: b727d50e83c6ea963a72df97eb0ecc4f4ed1e4b0
 
 COCOAPODS: 1.5.0

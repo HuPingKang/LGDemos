@@ -76,6 +76,19 @@
 		4A57D03F207CB06A00D1B864 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A57D03E207CB06A00D1B864 /* HomeHeaderView.xib */; };
 		4A57D041207CB20600D1B864 /* HomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57D040207CB20600D1B864 /* HomeSectionView.swift */; };
 		4A57D043207CB20F00D1B864 /* HomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A57D042207CB20F00D1B864 /* HomeSectionView.xib */; };
+		4A6615AA2084603200814116 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A6615A92084603200814116 /* video.json */; };
+		4A6615C32084617500814116 /* AILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615AD2084617500814116 /* AILoadingView.m */; };
+		4A6615C42084617500814116 /* UINavigationController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615B02084617500814116 /* UINavigationController+CLPlayerRotation.m */; };
+		4A6615C52084617500814116 /* UITabBarController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615B22084617500814116 /* UITabBarController+CLPlayerRotation.m */; };
+		4A6615C62084617500814116 /* UIView+CLSetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615B42084617500814116 /* UIView+CLSetRect.m */; };
+		4A6615C72084617500814116 /* UIViewController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615B62084617500814116 /* UIViewController+CLPlayerRotation.m */; };
+		4A6615C82084617500814116 /* CLGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615B82084617500814116 /* CLGCDTimerManager.m */; };
+		4A6615C92084617500814116 /* CLPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615BA2084617500814116 /* CLPlayerMaskView.m */; };
+		4A6615CA2084617500814116 /* CLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615BC2084617500814116 /* CLPlayerView.m */; };
+		4A6615CB2084617500814116 /* CLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615BE2084617500814116 /* CLSlider.m */; };
+		4A6615CC2084617500814116 /* PlayBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615C02084617500814116 /* PlayBottomToolBar.m */; };
+		4A6615CD2084617500814116 /* PlayTopToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615C22084617500814116 /* PlayTopToolBar.m */; };
+		4A6615CF208465EF00814116 /* LGVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615CE208465EF00814116 /* LGVideoCell.swift */; };
 		4AB4F4B9207CBB3D00826B74 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4F4B4207CBB3D00826B74 /* 01.jpg */; };
 		4AB4F4BA207CBB3D00826B74 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4F4B5207CBB3D00826B74 /* 02.jpg */; };
 		4AB4F4BB207CBB3D00826B74 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4F4B6207CBB3D00826B74 /* 03.jpg */; };
@@ -182,6 +195,30 @@
 		4A57D03E207CB06A00D1B864 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		4A57D040207CB20600D1B864 /* HomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionView.swift; sourceTree = "<group>"; };
 		4A57D042207CB20F00D1B864 /* HomeSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionView.xib; sourceTree = "<group>"; };
+		4A6615A92084603200814116 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		4A6615AC2084617500814116 /* AILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoadingView.h; sourceTree = "<group>"; };
+		4A6615AD2084617500814116 /* AILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILoadingView.m; sourceTree = "<group>"; };
+		4A6615AF2084617500814116 /* UINavigationController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		4A6615B02084617500814116 /* UINavigationController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		4A6615B12084617500814116 /* UITabBarController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		4A6615B22084617500814116 /* UITabBarController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		4A6615B32084617500814116 /* UIView+CLSetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLSetRect.h"; sourceTree = "<group>"; };
+		4A6615B42084617500814116 /* UIView+CLSetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLSetRect.m"; sourceTree = "<group>"; };
+		4A6615B52084617500814116 /* UIViewController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		4A6615B62084617500814116 /* UIViewController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		4A6615B72084617500814116 /* CLGCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGCDTimerManager.h; sourceTree = "<group>"; };
+		4A6615B82084617500814116 /* CLGCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGCDTimerManager.m; sourceTree = "<group>"; };
+		4A6615B92084617500814116 /* CLPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerMaskView.h; sourceTree = "<group>"; };
+		4A6615BA2084617500814116 /* CLPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerMaskView.m; sourceTree = "<group>"; };
+		4A6615BB2084617500814116 /* CLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerView.h; sourceTree = "<group>"; };
+		4A6615BC2084617500814116 /* CLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerView.m; sourceTree = "<group>"; };
+		4A6615BD2084617500814116 /* CLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlider.h; sourceTree = "<group>"; };
+		4A6615BE2084617500814116 /* CLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlider.m; sourceTree = "<group>"; };
+		4A6615BF2084617500814116 /* PlayBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayBottomToolBar.h; sourceTree = "<group>"; };
+		4A6615C02084617500814116 /* PlayBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayBottomToolBar.m; sourceTree = "<group>"; };
+		4A6615C12084617500814116 /* PlayTopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayTopToolBar.h; sourceTree = "<group>"; };
+		4A6615C22084617500814116 /* PlayTopToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayTopToolBar.m; sourceTree = "<group>"; };
+		4A6615CE208465EF00814116 /* LGVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGVideoCell.swift; sourceTree = "<group>"; };
 		4AB4F4B2207CB9A300826B74 /* LGHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHeader.h; sourceTree = "<group>"; };
 		4AB4F4B4207CBB3D00826B74 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		4AB4F4B5207CBB3D00826B74 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
@@ -256,6 +293,7 @@
 		4A21CAF520806F5E0094A5E6 /* JSONData */ = {
 			isa = PBXGroup;
 			children = (
+				4A6615A92084603200814116 /* video.json */,
 				4A21CAF620806F5E0094A5E6 /* 1872 */,
 				4A21CAF720806F5E0094A5E6 /* 1898 */,
 				4A21CAF820806F5E0094A5E6 /* app_JSON */,
@@ -286,6 +324,7 @@
 		4A30B91D207DCD1F0095E666 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				4A6615AB2084617500814116 /* CLPlayer */,
 				4A21CAF520806F5E0094A5E6 /* JSONData */,
 			);
 			path = lib;
@@ -382,6 +421,7 @@
 			children = (
 				4A57D034207CA4BF00D1B864 /* LGMessageVC.swift */,
 				4A21CB2A20808D5A0094A5E6 /* LGMessageModel.swift */,
+				4A6615CE208465EF00814116 /* LGVideoCell.swift */,
 			);
 			path = "消息";
 			sourceTree = "<group>";
@@ -400,6 +440,43 @@
 				4A21CB2C2080A78B0094A5E6 /* LGWordPagePicModel.swift */,
 			);
 			path = "言职";
+			sourceTree = "<group>";
+		};
+		4A6615AB2084617500814116 /* CLPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4A6615AC2084617500814116 /* AILoadingView.h */,
+				4A6615AD2084617500814116 /* AILoadingView.m */,
+				4A6615AE2084617500814116 /* Category */,
+				4A6615B72084617500814116 /* CLGCDTimerManager.h */,
+				4A6615B82084617500814116 /* CLGCDTimerManager.m */,
+				4A6615B92084617500814116 /* CLPlayerMaskView.h */,
+				4A6615BA2084617500814116 /* CLPlayerMaskView.m */,
+				4A6615BB2084617500814116 /* CLPlayerView.h */,
+				4A6615BC2084617500814116 /* CLPlayerView.m */,
+				4A6615BD2084617500814116 /* CLSlider.h */,
+				4A6615BE2084617500814116 /* CLSlider.m */,
+				4A6615BF2084617500814116 /* PlayBottomToolBar.h */,
+				4A6615C02084617500814116 /* PlayBottomToolBar.m */,
+				4A6615C12084617500814116 /* PlayTopToolBar.h */,
+				4A6615C22084617500814116 /* PlayTopToolBar.m */,
+			);
+			path = CLPlayer;
+			sourceTree = "<group>";
+		};
+		4A6615AE2084617500814116 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4A6615AF2084617500814116 /* UINavigationController+CLPlayerRotation.h */,
+				4A6615B02084617500814116 /* UINavigationController+CLPlayerRotation.m */,
+				4A6615B12084617500814116 /* UITabBarController+CLPlayerRotation.h */,
+				4A6615B22084617500814116 /* UITabBarController+CLPlayerRotation.m */,
+				4A6615B32084617500814116 /* UIView+CLSetRect.h */,
+				4A6615B42084617500814116 /* UIView+CLSetRect.m */,
+				4A6615B52084617500814116 /* UIViewController+CLPlayerRotation.h */,
+				4A6615B62084617500814116 /* UIViewController+CLPlayerRotation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		4AB4F4B3207CBB3D00826B74 /* Sources */ = {
@@ -564,6 +641,7 @@
 				4A21CB1C20806F5F0094A5E6 /* stylenand 打底霜 in Resources */,
 				4A57D03F207CB06A00D1B864 /* HomeHeaderView.xib in Resources */,
 				4A21CB2320806F5F0094A5E6 /* 种草小分队 in Resources */,
+				4A6615AA2084603200814116 /* video.json in Resources */,
 				4A21CB1920806F5F0094A5E6 /* json_Party in Resources */,
 				4A2771F1207F453700A25309 /* LGWordPagePicCell.xib in Resources */,
 				4A57D009207C9C2C00D1B864 /* LaunchScreen.storyboard in Resources */,
@@ -668,6 +746,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LGDemo/Pods-LGDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -675,6 +754,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -693,21 +773,33 @@
 			files = (
 				4A21CB2B20808D5A0094A5E6 /* LGMessageModel.swift in Sources */,
 				4A57D02D207C9CE800D1B864 /* LGMainTabVC.swift in Sources */,
+				4A6615C72084617500814116 /* UIViewController+CLPlayerRotation.m in Sources */,
+				4A6615C42084617500814116 /* UINavigationController+CLPlayerRotation.m in Sources */,
+				4A6615C92084617500814116 /* CLPlayerMaskView.m in Sources */,
 				4A30BAC4207E0FBC0095E666 /* WordCategoryView.swift in Sources */,
 				4A57D001207C9C1F00D1B864 /* LGBaseVC.swift in Sources */,
+				4A6615CB2084617500814116 /* CLSlider.m in Sources */,
 				4A57D033207CA4A200D1B864 /* LGHomeVC.swift in Sources */,
 				4A57D03D207CAD9900D1B864 /* HomeHeaderView.swift in Sources */,
 				4A2771F3207F550B00A25309 /* MeCell.swift in Sources */,
 				4A57D03B207CAD8B00D1B864 /* HomePageCell.swift in Sources */,
 				4A2771E9207F1BF700A25309 /* LGWordPageVC.swift in Sources */,
+				4A6615C32084617500814116 /* AILoadingView.m in Sources */,
+				4A6615C62084617500814116 /* UIView+CLSetRect.m in Sources */,
 				4A57D037207CA4CB00D1B864 /* LGWordVC.swift in Sources */,
 				4A30B91A207DA6B20095E666 /* HomeNaviView.swift in Sources */,
+				4A6615C82084617500814116 /* CLGCDTimerManager.m in Sources */,
 				4A57D039207CA4D400D1B864 /* LGMeVC.swift in Sources */,
+				4A6615CC2084617500814116 /* PlayBottomToolBar.m in Sources */,
+				4A6615CF208465EF00814116 /* LGVideoCell.swift in Sources */,
 				4A57D035207CA4BF00D1B864 /* LGMessageVC.swift in Sources */,
+				4A6615CD2084617500814116 /* PlayTopToolBar.m in Sources */,
 				4A57CFFF207C9C1F00D1B864 /* AppDelegate.swift in Sources */,
 				4A2771F0207F453700A25309 /* LGWordPagePicCell.swift in Sources */,
 				4A2771F5207F5E8200A25309 /* UIView.swift in Sources */,
+				4A6615CA2084617500814116 /* CLPlayerView.m in Sources */,
 				4A2771EC207F417B00A25309 /* LGWordPageCell.swift in Sources */,
+				4A6615C52084617500814116 /* UITabBarController+CLPlayerRotation.m in Sources */,
 				4A57D041207CB20600D1B864 /* HomeSectionView.swift in Sources */,
 				4A21CB2D2080A78B0094A5E6 /* LGWordPagePicModel.swift in Sources */,
 			);
@@ -890,10 +982,7 @@
 					"$(PROJECT_DIR)/LGDemo/lib/WXFrameworks",
 				);
 				INFOPLIST_FILE = LGDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -924,10 +1013,7 @@
 					"$(PROJECT_DIR)/LGDemo/lib/WXFrameworks",
 				);
 				INFOPLIST_FILE = LGDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -955,11 +1041,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -977,11 +1059,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -998,11 +1076,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1019,11 +1093,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

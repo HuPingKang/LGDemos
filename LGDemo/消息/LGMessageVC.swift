@@ -32,6 +32,12 @@ class LGMessageVC: UITableViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.playerView?.destroyPlayer()
+        self.playCell = nil
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

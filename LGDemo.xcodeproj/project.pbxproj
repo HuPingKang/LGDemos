@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E94B079208C8CD20010DBE7 /* PaidNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B073208C8CD10010DBE7 /* PaidNewsCell.m */; };
+		2E94B07A208C8CD20010DBE7 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B074208C8CD10010DBE7 /* NewsCell.m */; };
+		2E94B07B208C8CD20010DBE7 /* AdsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B078208C8CD20010DBE7 /* AdsCell.m */; };
+		2E94B082208C8D390010DBE7 /* AdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B07C208C8D380010DBE7 /* AdsModel.m */; };
+		2E94B083208C8D390010DBE7 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B07D208C8D380010DBE7 /* NewsModel.m */; };
+		2E94B084208C8D390010DBE7 /* PaidNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B07F208C8D380010DBE7 /* PaidNewsModel.m */; };
+		2E94B087208C8D740010DBE7 /* PaidNewsFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B086208C8D740010DBE7 /* PaidNewsFrameModel.m */; };
+		2E94B08E208C8DE50010DBE7 /* Define.h in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B08D208C8DE50010DBE7 /* Define.h */; };
+		2E94B090208C8FB80010DBE7 /* newsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E94B08F208C8FB80010DBE7 /* newsData.json */; };
+		2E94B092208C8FCD0010DBE7 /* adsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E94B091208C8FCD0010DBE7 /* adsData.json */; };
+		2E94B094208C8FDC0010DBE7 /* paidNewsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E94B093208C8FDC0010DBE7 /* paidNewsData.json */; };
+		2E94B097208C94B90010DBE7 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E94B095208C94B80010DBE7 /* HeaderView.m */; };
 		4A21CB0D20806F5F0094A5E6 /* 1872 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF620806F5E0094A5E6 /* 1872 */; };
 		4A21CB0E20806F5F0094A5E6 /* 1898 in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF720806F5E0094A5E6 /* 1898 */; };
 		4A21CB0F20806F5F0094A5E6 /* app_JSON in Resources */ = {isa = PBXBuildFile; fileRef = 4A21CAF820806F5E0094A5E6 /* app_JSON */; };
@@ -119,6 +131,26 @@
 /* Begin PBXFileReference section */
 		16DBDDCFED588D033769DDF3 /* Pods-LGDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGDemoUITests/Pods-LGDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		211F7E1CB14DEFD0037AC322 /* Pods_LGDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E94B073208C8CD10010DBE7 /* PaidNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidNewsCell.m; sourceTree = "<group>"; };
+		2E94B074208C8CD10010DBE7 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		2E94B075208C8CD10010DBE7 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		2E94B076208C8CD20010DBE7 /* AdsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsCell.h; sourceTree = "<group>"; };
+		2E94B077208C8CD20010DBE7 /* PaidNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidNewsCell.h; sourceTree = "<group>"; };
+		2E94B078208C8CD20010DBE7 /* AdsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsCell.m; sourceTree = "<group>"; };
+		2E94B07C208C8D380010DBE7 /* AdsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsModel.m; sourceTree = "<group>"; };
+		2E94B07D208C8D380010DBE7 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		2E94B07E208C8D380010DBE7 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		2E94B07F208C8D380010DBE7 /* PaidNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidNewsModel.m; sourceTree = "<group>"; };
+		2E94B080208C8D380010DBE7 /* AdsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsModel.h; sourceTree = "<group>"; };
+		2E94B081208C8D390010DBE7 /* PaidNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidNewsModel.h; sourceTree = "<group>"; };
+		2E94B085208C8D740010DBE7 /* PaidNewsFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidNewsFrameModel.h; sourceTree = "<group>"; };
+		2E94B086208C8D740010DBE7 /* PaidNewsFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidNewsFrameModel.m; sourceTree = "<group>"; };
+		2E94B08D208C8DE50010DBE7 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		2E94B08F208C8FB80010DBE7 /* newsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsData.json; sourceTree = "<group>"; };
+		2E94B091208C8FCD0010DBE7 /* adsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adsData.json; sourceTree = "<group>"; };
+		2E94B093208C8FDC0010DBE7 /* paidNewsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paidNewsData.json; sourceTree = "<group>"; };
+		2E94B095208C94B80010DBE7 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		2E94B096208C94B80010DBE7 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		34BC96A6F1789EAF511CDFF8 /* Pods-LGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGDemo/Pods-LGDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4A21CAF620806F5E0094A5E6 /* 1872 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1872; sourceTree = "<group>"; };
 		4A21CAF720806F5E0094A5E6 /* 1898 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1898; sourceTree = "<group>"; };
@@ -293,7 +325,9 @@
 		4A21CAF520806F5E0094A5E6 /* JSONData */ = {
 			isa = PBXGroup;
 			children = (
+				2E94B091208C8FCD0010DBE7 /* adsData.json */,
 				4A6615A92084603200814116 /* video.json */,
+				2E94B08F208C8FB80010DBE7 /* newsData.json */,
 				4A21CAF620806F5E0094A5E6 /* 1872 */,
 				4A21CAF720806F5E0094A5E6 /* 1898 */,
 				4A21CAF820806F5E0094A5E6 /* app_JSON */,
@@ -308,6 +342,7 @@
 				4A21CB0120806F5E0094A5E6 /* json_LoveBeauty */,
 				4A21CB0220806F5E0094A5E6 /* json_Party */,
 				4A21CB0320806F5E0094A5E6 /* json_Student */,
+				2E94B093208C8FDC0010DBE7 /* paidNewsData.json */,
 				4A21CB0420806F5E0094A5E6 /* json_WageEarners */,
 				4A21CB0520806F5E0094A5E6 /* stylenand 打底霜 */,
 				4A21CB0620806F5E0094A5E6 /* 广场 */,
@@ -361,6 +396,7 @@
 				4A57D02C207C9CE800D1B864 /* LGMainTabVC.swift */,
 				4A57D002207C9C1F00D1B864 /* Main.storyboard */,
 				4AB4F4B2207CB9A300826B74 /* LGHeader.h */,
+				2E94B08D208C8DE50010DBE7 /* Define.h */,
 				4A57D02E207CA48B00D1B864 /* 首页 */,
 				4A57D030207CA48B00D1B864 /* 消息 */,
 				4A57D031207CA48B00D1B864 /* 言职 */,
@@ -403,6 +439,22 @@
 				4A57D042207CB20F00D1B864 /* HomeSectionView.xib */,
 				4A30B919207DA6B20095E666 /* HomeNaviView.swift */,
 				4A30B91B207DA6BD0095E666 /* HomeNaviView.xib */,
+				2E94B096208C94B80010DBE7 /* HeaderView.h */,
+				2E94B095208C94B80010DBE7 /* HeaderView.m */,
+				2E94B076208C8CD20010DBE7 /* AdsCell.h */,
+				2E94B078208C8CD20010DBE7 /* AdsCell.m */,
+				2E94B075208C8CD10010DBE7 /* NewsCell.h */,
+				2E94B074208C8CD10010DBE7 /* NewsCell.m */,
+				2E94B077208C8CD20010DBE7 /* PaidNewsCell.h */,
+				2E94B073208C8CD10010DBE7 /* PaidNewsCell.m */,
+				2E94B080208C8D380010DBE7 /* AdsModel.h */,
+				2E94B07C208C8D380010DBE7 /* AdsModel.m */,
+				2E94B07E208C8D380010DBE7 /* NewsModel.h */,
+				2E94B07D208C8D380010DBE7 /* NewsModel.m */,
+				2E94B081208C8D390010DBE7 /* PaidNewsModel.h */,
+				2E94B07F208C8D380010DBE7 /* PaidNewsModel.m */,
+				2E94B085208C8D740010DBE7 /* PaidNewsFrameModel.h */,
+				2E94B086208C8D740010DBE7 /* PaidNewsFrameModel.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -529,6 +581,7 @@
 				4A57CFF8207C9C1F00D1B864 /* Frameworks */,
 				4A57CFF9207C9C1F00D1B864 /* Resources */,
 				FF9FBB46C5BDECD7311FAE42 /* [CP] Embed Pods Frameworks */,
+				2CEBB77B9EE2A7798DE41719 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -547,6 +600,8 @@
 				4A57D00B207C9C2C00D1B864 /* Sources */,
 				4A57D00C207C9C2C00D1B864 /* Frameworks */,
 				4A57D00D207C9C2C00D1B864 /* Resources */,
+				DEAA1CD0BDC62B463C5DCD85 /* [CP] Embed Pods Frameworks */,
+				3223CCDABB7533C8C6E077EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -566,6 +621,8 @@
 				4A57D016207C9C2C00D1B864 /* Sources */,
 				4A57D017207C9C2C00D1B864 /* Frameworks */,
 				4A57D018207C9C2C00D1B864 /* Resources */,
+				94BF830717B77D09DE1251D9 /* [CP] Embed Pods Frameworks */,
+				793771841639BB437B6F028B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -627,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A21CB2020806F5F0094A5E6 /* 搜索清单 in Resources */,
+				2E94B090208C8FB80010DBE7 /* newsData.json in Resources */,
 				4A2771ED207F417B00A25309 /* LGWordPageCell.xib in Resources */,
 				4A21CB0F20806F5F0094A5E6 /* app_JSON in Resources */,
 				4A21CB2120806F5F0094A5E6 /* 深夜图书馆 in Resources */,
@@ -647,6 +705,8 @@
 				4A57D009207C9C2C00D1B864 /* LaunchScreen.storyboard in Resources */,
 				4A21CB0D20806F5F0094A5E6 /* 1872 in Resources */,
 				4AB4F4B9207CBB3D00826B74 /* 01.jpg in Resources */,
+				2E94B092208C8FCD0010DBE7 /* adsData.json in Resources */,
+				2E94B094208C8FDC0010DBE7 /* paidNewsData.json in Resources */,
 				4A30B91C207DA6BD0095E666 /* HomeNaviView.xib in Resources */,
 				4A21CB1E20806F5F0094A5E6 /* 底妆 in Resources */,
 				4AB4F4BA207CBB3D00826B74 /* 02.jpg in Resources */,
@@ -702,6 +762,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2CEBB77B9EE2A7798DE41719 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGDemo/Pods-LGDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3223CCDABB7533C8C6E077EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGDemoTests/Pods-LGDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793771841639BB437B6F028B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGDemoUITests/Pods-LGDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E6D6183C8B8FFF7CB001DC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -718,6 +823,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94BF830717B77D09DE1251D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGDemoUITests/Pods-LGDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB2230F228C8258A4806E5CC /* [CP] Check Pods Manifest.lock */ = {
@@ -738,6 +858,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DEAA1CD0BDC62B463C5DCD85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGDemoTests/Pods-LGDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FF9FBB46C5BDECD7311FAE42 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -745,19 +880,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LGDemo/Pods-LGDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -773,10 +916,16 @@
 			files = (
 				4A21CB2B20808D5A0094A5E6 /* LGMessageModel.swift in Sources */,
 				4A57D02D207C9CE800D1B864 /* LGMainTabVC.swift in Sources */,
+				2E94B087208C8D740010DBE7 /* PaidNewsFrameModel.m in Sources */,
 				4A6615C72084617500814116 /* UIViewController+CLPlayerRotation.m in Sources */,
+				2E94B082208C8D390010DBE7 /* AdsModel.m in Sources */,
+				2E94B083208C8D390010DBE7 /* NewsModel.m in Sources */,
 				4A6615C42084617500814116 /* UINavigationController+CLPlayerRotation.m in Sources */,
+				2E94B079208C8CD20010DBE7 /* PaidNewsCell.m in Sources */,
+				2E94B07A208C8CD20010DBE7 /* NewsCell.m in Sources */,
 				4A6615C92084617500814116 /* CLPlayerMaskView.m in Sources */,
 				4A30BAC4207E0FBC0095E666 /* WordCategoryView.swift in Sources */,
+				2E94B097208C94B90010DBE7 /* HeaderView.m in Sources */,
 				4A57D001207C9C1F00D1B864 /* LGBaseVC.swift in Sources */,
 				4A6615CB2084617500814116 /* CLSlider.m in Sources */,
 				4A57D033207CA4A200D1B864 /* LGHomeVC.swift in Sources */,
@@ -788,9 +937,12 @@
 				4A6615C62084617500814116 /* UIView+CLSetRect.m in Sources */,
 				4A57D037207CA4CB00D1B864 /* LGWordVC.swift in Sources */,
 				4A30B91A207DA6B20095E666 /* HomeNaviView.swift in Sources */,
+				2E94B084208C8D390010DBE7 /* PaidNewsModel.m in Sources */,
+				2E94B08E208C8DE50010DBE7 /* Define.h in Sources */,
 				4A6615C82084617500814116 /* CLGCDTimerManager.m in Sources */,
 				4A57D039207CA4D400D1B864 /* LGMeVC.swift in Sources */,
 				4A6615CC2084617500814116 /* PlayBottomToolBar.m in Sources */,
+				2E94B07B208C8CD20010DBE7 /* AdsCell.m in Sources */,
 				4A6615CF208465EF00814116 /* LGVideoCell.swift in Sources */,
 				4A57D035207CA4BF00D1B864 /* LGMessageVC.swift in Sources */,
 				4A6615CD2084617500814116 /* PlayTopToolBar.m in Sources */,
@@ -982,7 +1134,10 @@
 					"$(PROJECT_DIR)/LGDemo/lib/WXFrameworks",
 				);
 				INFOPLIST_FILE = LGDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -1013,7 +1168,10 @@
 					"$(PROJECT_DIR)/LGDemo/lib/WXFrameworks",
 				);
 				INFOPLIST_FILE = LGDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -1041,7 +1199,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1059,7 +1221,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1076,7 +1242,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1093,7 +1263,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2KG7JA423;
 				INFOPLIST_FILE = LGDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCDQueueDemo.LGDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

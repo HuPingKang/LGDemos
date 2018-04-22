@@ -51,7 +51,7 @@ extension LGMessageVC{
         return (infoModels?.count)!
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270
+        return 240
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -63,7 +63,7 @@ extension LGMessageVC{
             
             wSelf?.playCell = cell
             wSelf?.playerView?.destroyPlayer()
-            let playerV = CLPlayerView.init(frame: CGRect.init(x: 0, y: 0, width: cell.width, height: 220))
+            let playerV = CLPlayerView.init(frame: CGRect.init(x: 0, y: 0, width: cell.width, height: 190))
             wSelf?.playerView = playerV
             cell.contentView.addSubview((wSelf?.playerView)!)
             wSelf?.playerView?.progressBackgroundColor = UIColor.init(red: 53/255.0, green: 53/255.0, blue: 65/255.0, alpha: 1)

@@ -11,8 +11,22 @@
 
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import <MJRefresh/MJRefresh.h>
+#import <MJRefresh/MJRefreshHeader.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <YYWebImage/UIImageView+YYWebImage.h>
+#import <YYWebImage/CALayer+YYWebImage.h>
+#import <YYWebImage/UIImage+YYWebImage.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 #import "PlayBottomToolBar.h"
 #import "CLPlayerView.h"
+
+#import "AdsCell.h"
+#import "NewsCell.h"
+#import "PaidNewsCell.h"
+#import "AdsModel.h"
+#import "NewsModel.h"
+#import "PaidNewsModel.h"
+#import "HeaderView.h"
+
 
 #endif /* LGHeader_h */

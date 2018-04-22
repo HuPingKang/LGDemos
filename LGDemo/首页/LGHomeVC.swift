@@ -14,49 +14,29 @@ let kTabHeight:CGFloat = (KW * KH == 812.0 * 375.0) ?83.0:49.0
 class LGHomeVC: LGBaseVC {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    private lazy var naviBgView:HomeNaviView = {
-       
-        let xx = HomeNaviView.getNaviView()
-        xx.frame = CGRect.init(x: 0, y: 0, width: KW, height: (self.navigationController?.navigationBar.frame.size.height)!+20.0)
-        xx.clickScan = {
-            
-            print("点击了扫描")
-            
-        }
+    private lazy var headerView:HeaderView? = {
         
+        let xx = HeaderView.init(title: "首页", button: "catalog_22x21_")
+        xx?.delegate = self
         return xx
-        
     }()
-    
-    private lazy var sectionView: HomeSectionView = {
-        
-        let xx = HomeSectionView.getHeader()
-        return xx
-        
-    }()
-    
-    private lazy var headerView: HomeHeaderView = {
-        
-        let xx = HomeHeaderView.getHeader()
-        return xx
-        
-    }()
-    
+    private var adsData:[AdsModel]? = nil
+    private var newsData:[NewsModel]? = nil
+    private var paidNewsData:[PaidNewsModel]? = nil
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isTranslucent = false
         
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle{
+//        return .lightContent
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.view.insertSubview(self.naviBgView, belowSubview: (self.navigationController?.navigationBar)!)
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
         } else {
@@ -67,9 +47,16 @@ class LGHomeVC: LGBaseVC {
         self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
             self.endRefresh()
         })
-        
+    
         self.tableView.mj_header.beginRefreshing()
         self.endRefresh()
+        
+        HomeAdapter.setupDataSuccess { (news, ads, paidNews) in
+            self.newsData = news;
+            self.adsData = ads;
+            self.paidNewsData = paidNews;
+            self.tableView.reloadData()
+        }
         
     }
 
@@ -89,42 +76,59 @@ class LGHomeVC: LGBaseVC {
 extension LGHomeVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let _ = self.newsData?.count {
+          
+            return self.newsData!.count + self.adsData!.count + self.paidNewsData!.count;
+            
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        if indexPath.row == 0 {
+            return self.adsData![0].cellHeight
+        }else if indexPath.row == 2{
+            return self.paidNewsData![0].cellHeight
+        }
+        return self.newsData![0].cellHeight
     }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
-    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HomePageCell.getCell(tableView, indexPath)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        return sectionView
+        if indexPath.row == 0 {
+            
+            let cell:AdsCell = AdsCell(tableview: tableView, adsModel: self.adsData!.first)
+            cell.delegate = self
+            return cell
+
+        }else if indexPath.row == 2{
+            
+            let cell:PaidNewsCell = PaidNewsCell.init(tableView: tableView, paidNewsModel: self.paidNewsData![0])
+            cell.delegate = self
+            return cell
+        }else if indexPath.row == 1{
+            
+            let cell:NewsCell = NewsCell.init(tableView: tableView, newsModel: self.newsData![indexPath.row-1])
+
+            cell.delegate = self
+            return cell
+        }
+
+        let cell:NewsCell = NewsCell.init(tableView: tableView, newsModel: self.newsData![indexPath.row-2])
+        cell.delegate = self
+        return cell
         
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        if scrollView.contentOffset.y<0 {
-            self.naviBgView.isHidden = true
-            
-        }else{
-            self.naviBgView.isHidden = false
-           
-        }
-        var alpha = scrollView.contentOffset.y/220.0
-        if alpha > 1 {
-            alpha = 1
-        }
-        
-        self.naviBgView.backgroundColor = (UIColor.white).withAlphaComponent(alpha)
-        
+//        self.headerView?.viewScrolledBy(y: Float(scrollView.contentOffset.y))
     }
+}
+
+extension LGHomeVC:HeaderViewDelegate{
     
 }
+extension LGHomeVC:AdsCellDelegate,NewsCellDelegate,PaidNewsCellDelegate{
+    
+}
+

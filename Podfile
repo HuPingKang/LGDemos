@@ -9,7 +9,10 @@ target 'LGDemo' do
    pod 'MJRefresh' 
    pod 'SnapKit'
    pod 'Masonry'
-  # Pods for LGDemo
+   pod 'YYWebImage'
+   pod 'MBProgressHUD', '~> 1.0.0'
+   pod 'SDWebImage', '~> 4.0'
+
 
   target 'LGDemoTests' do
     inherit! :search_paths

@@ -57,6 +57,8 @@ class LGWordVC: LGBaseVC {
         return xx
     }()
     
+    private var childVCs:[LGWordPageVC]?
+    
     @objc private func questions(){
         print("send your questions...")
     }
@@ -69,9 +71,7 @@ class LGWordVC: LGBaseVC {
             
             index in
             
-            let vc = LGWordPageVC()
-            vc.pageIndex = index
-            wSelf?.pageController?.setViewControllers([vc], direction: index > xx.cateIndex ?.forward:.reverse, animated: true, completion: { (fx) in
+            wSelf?.pageController?.setViewControllers([self.childVCs![index]], direction: index > xx.cateIndex ?.forward:.reverse, animated: true, completion: { (fx) in
             })
             
             xx.cateIndex = index
@@ -123,8 +123,13 @@ class LGWordVC: LGBaseVC {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.pageController?.setViewControllers([LGWordPageVC()], direction: .reverse, animated: false, completion: nil)
+        self.childVCs = [LGWordPageVC]()
+        for i in 0..<4 {
+            let vc = LGWordPageVC()
+            vc.pageIndex = i
+            self.childVCs?.append(vc)
+        }
+        self.pageController?.setViewControllers([(self.childVCs?[0])!], direction: .reverse, animated: false, completion: nil)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: self.leftSearchBtn)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: self.rightUserInfoBtn)
         
@@ -150,38 +155,31 @@ class LGWordVC: LGBaseVC {
 extension LGWordVC:UIPageViewControllerDelegate,UIPageViewControllerDataSource{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        var index = (viewController as! LGWordPageVC).pageIndex
-        index -= 1
-        
-        print("before:\(index)")
-        if index < 0 {
+        let currentIndex:Int = (self.childVCs?.index(of: viewController as! LGWordPageVC))!
+        self.cateView.cateIndex = currentIndex
+
+        if currentIndex > 0 {
+            return self.childVCs?[currentIndex-1]
+            
+        }else{
             return nil
         }
-        
-        let vc = LGWordPageVC()
-        vc.pageIndex = index
-        self.cateView.cateIndex = index
-        
-        return vc
-        
+    
     }
   
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-     
-        var index = (viewController as! LGWordPageVC).pageIndex
-        index += 1
         
-        print("after:\(index)")
-        if index > 3 {
+        let currentIndex:Int = (self.childVCs?.index(of: viewController as! LGWordPageVC))!
+        self.cateView.cateIndex = currentIndex
+
+        if currentIndex < (self.childVCs?.count)! - 1 {
+            return self.childVCs?[currentIndex+1]
+            
+        }else{
             return nil
         }
         
-        let vc = LGWordPageVC()
-        vc.pageIndex = index
-        self.cateView.cateIndex = index
-        
-        return vc
-        
+      
     }
     
 }
